@@ -1,1 +1,20 @@
 // Mixins in here
+.border-dotted(){
+   border-bottom: 2px dotted grey;
+}
+
+.display-flex(@direction,@justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.cta-btns(@bg-color:@eastern-blue, @width:100%, @height:35px,@font-color:@white){
+    display: block;
+    background-color: @bg-color;
+    width: @width;
+    height:@height;
+    color: @font-color
+}
+

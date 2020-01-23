@@ -1,1 +1,35 @@
 // Navigation Styles here
+
+nav{
+  
+    .display-flex(row,space-between, center);
+   padding:0 4em;
+
+   
+
+    .links{
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-end;
+        
+    }
+
+    .links a{
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+        margin:1em 1em;
+    }
+    
+    @media @mobile {
+        
+        .logo-container{
+            display: none;
+        }
+
+        .links a{
+            font-size: 1.5rem;
+        }
+    }
+
+}
